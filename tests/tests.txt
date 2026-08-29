@@ -1,0 +1,64 @@
+# Tests
+
+## Test 1 - Explore the premium demo and navigate between sections [sanity]
+Viewport: desktop
+Covers: sticky navigation, homepage hero, services cards, responsive-ready section navigation, demo protection labels
+Description: Verifies the core sales-demo browsing experience and that the site clearly identifies itself as a concept.
+
+Steps:
+1. Open the deployed website
+2. Confirm the header shows the DEMO WEBSITE / CONCEPT label
+3. Use the navigation to open Services
+4. Select View Details on a service card
+5. Close the demo interaction modal
+
+Expected: The premium homepage renders correctly, navigation scrolls to Services, the service card opens a clearly labeled demo interaction, and no official-business claim is presented.
+
+## Test 2 - Submit the booking form without creating a real appointment
+Viewport: desktop
+Covers: booking form validation, demo booking submission, user-visible success state, no-real-appointment disclaimer
+Description: Verifies the interactive booking prototype accepts valid sample input and explains that it is only a demo.
+
+Steps:
+1. Open the booking section
+2. Enter a valid sample name, email, phone, service, date, and time
+3. Submit the form
+
+Expected: A success state appears stating that the booking form is demo-only and would connect to a real booking system in a finished client website.
+
+## Test 3 - Reject incomplete booking input on mobile
+Viewport: mobile
+Covers: required booking fields, mobile form usability, validation guardrail, responsive layout
+Description: Verifies the mobile booking experience blocks an incomplete submission and remains readable without horizontal scrolling.
+
+Steps:
+1. Open the booking section on a mobile viewport
+2. Leave required fields empty
+3. Submit the form
+
+Expected: Browser validation prevents submission, required fields remain visible and usable, and the page has no horizontal scrolling.
+
+## Test 4 - Filter the demo gallery on mobile
+Viewport: mobile
+Covers: gallery category filtering, mobile responsive gallery, demo imagery presentation
+Description: Verifies gallery filters change the visible generic demo imagery while maintaining a usable mobile layout.
+
+Steps:
+1. Open the gallery section
+2. Select the Fitness category
+3. Select the Pool category
+
+Expected: The gallery changes to show only the selected category's demo images and remains readable with images preserving their proportions.
+
+## Test 5 - Verify demo pricing and fictional contact information
+Viewport: desktop
+Covers: membership pricing presentation, DEMO PRICE labels, demo contact information, footer official-site disclaimer
+Description: Verifies commercial-looking details are explicitly marked as fictional and cannot reasonably be mistaken for live client information.
+
+Steps:
+1. Open Membership
+2. Review all three membership plans
+3. Open Contact
+4. Review the contact card and footer
+
+Expected: Membership prices are labeled DEMO PRICE, contact details are labeled DEMO CONTACT INFORMATION, and the footer states the site is not the official website of Delposh Beauty & Fitness.
